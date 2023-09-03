@@ -1,6 +1,6 @@
 <?php
 
-const BASE_URL = $_ENV['APP_URL'];
+const BASE_URL = env('APP_URL');
 
 function view($file, $data = [])
 {
