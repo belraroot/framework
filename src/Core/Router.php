@@ -1,6 +1,6 @@
 <?php
 
-function route($route, $path_to_include, $method_to_call)
+function route($route, $path_to_include)
 {
 	$callback = $path_to_include;
 	if (!is_callable($callback)) {
@@ -10,7 +10,6 @@ function route($route, $path_to_include, $method_to_call)
 	}
 	if ($route == "/404") {
 		include_once __DIR__ . "/$path_to_include";
-		call_user_func($method_to_call);
 		exit();
 	}
 	$request_url = filter_var($_SERVER['REQUEST_URI'], FILTER_SANITIZE_URL);
@@ -27,7 +26,6 @@ function route($route, $path_to_include, $method_to_call)
 			exit();
 		}
 		include_once __DIR__ . "/$path_to_include";
-		call_user_func($method_to_call);
 		exit();
 	}
 	if (count($route_parts) != count($request_url_parts)) {
@@ -50,6 +48,5 @@ function route($route, $path_to_include, $method_to_call)
 		exit();
 	}
 	include_once __DIR__ . "/$path_to_include";
-	call_user_func($method_to_call);
 	exit();
 }

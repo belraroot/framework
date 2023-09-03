@@ -4,39 +4,39 @@ namespace Codecomodo;
 
 class Route
 {
-    static function get($route, $path_to_include, $method_to_call)
+    static function get($route, $path_to_include)
     {
         if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-            route($route, $path_to_include, $method_to_call);
+            route($route, $path_to_include);
         }
     }
-    static function post($route, $path_to_include, $method_to_call)
+    static function post($route, $path_to_include)
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            route($route, $path_to_include, $method_to_call);
+            route($route, $path_to_include);
         }
     }
-    static function put($route, $path_to_include, $method_to_call)
+    static function put($route, $path_to_include)
     {
         if ($_SERVER['REQUEST_METHOD'] == 'PUT') {
-            route($route, $path_to_include, $method_to_call);
+            route($route, $path_to_include);
         }
     }
-    static function patch($route, $path_to_include, $method_to_call)
+    static function patch($route, $path_to_include)
     {
         if ($_SERVER['REQUEST_METHOD'] == 'PATCH') {
-            route($route, $path_to_include, $method_to_call);
+            route($route, $path_to_include);
         }
     }
-    static function delete($route, $path_to_include, $method_to_call)
+    static function delete($route, $path_to_include)
     {
         if ($_SERVER['REQUEST_METHOD'] == 'DELETE') {
-            route($route, $path_to_include, $method_to_call);
+            route($route, $path_to_include);
         }
     }
-    static function any($route, $path_to_include, $method_to_call)
+    static function any($route, $path_to_include)
     {
-        route($route, $path_to_include, $method_to_call);
+        route($route, $path_to_include);
     }
     static function out($text)
     {
