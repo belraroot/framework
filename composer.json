@@ -1,0 +1,18 @@
+{
+    "name": "codecomodo/framework",
+    "description": "Codecomodo framework files",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codecomodo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Veerasaroot Bunkangwan",
+            "email": "bosunakakawa@gmail.com"
+        }
+    ],
+    "require": {}
+}
