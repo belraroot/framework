@@ -1,7 +1,5 @@
 <?php
 
-namespace Codecomodo;
-
 function route($route, $path_to_include)
 {
 	$callback = $path_to_include;
