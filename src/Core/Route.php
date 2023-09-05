@@ -1,6 +1,6 @@
 <?php
 
-namespace Core;
+namespace Codecomodo\Core;
 
 use Symfony\Component\Routing\Matcher\UrlMatcher;
 use Symfony\Component\Routing\RequestContext;

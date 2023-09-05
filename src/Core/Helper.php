@@ -1,6 +1,6 @@
 <?php
 
-namespace Core;
+namespace Codecomodo\Core;
 
 define('BASE_URL', env('APP_URL'));
 
