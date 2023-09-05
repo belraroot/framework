@@ -18,7 +18,7 @@ class Route
         $this->route_name = $name;
     }
 
-    function get($path, $controller)
+    static function get($path, $controller)
     {
         $router = new RouteCollection();
 
@@ -27,7 +27,7 @@ class Route
         ), array(), array(), '', array(), array('GET')));
     }
 
-    function post($path, $controller)
+    static function post($path, $controller)
     {
         $router = new RouteCollection();
 
@@ -36,7 +36,7 @@ class Route
         ), array(), array(), '', array(), array('POST')));
     }
 
-    function put($path, $controller)
+    static function put($path, $controller)
     {
         $router = new RouteCollection();
 
@@ -45,7 +45,7 @@ class Route
         ), array(), array(), '', array(), array('PUT')));
     }
 
-    function delete($path, $controller)
+    static function delete($path, $controller)
     {
         $router = new RouteCollection();
 
