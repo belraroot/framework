@@ -6,7 +6,15 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit3325d0393f3afaca9869a461ca7f69cb
 {
+    public static $files = array (
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Component\\Routing\\' => 26,
+        ),
         'C' => 
         array (
             'Codecomodo\\' => 11,
@@ -14,6 +22,10 @@ class ComposerStaticInit3325d0393f3afaca9869a461ca7f69cb
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Component\\Routing\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/routing',
+        ),
         'Codecomodo\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

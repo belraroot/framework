@@ -6,5 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Symfony\\Component\\Routing\\' => array($vendorDir . '/symfony/routing'),
     'Codecomodo\\' => array($baseDir . '/src'),
 );

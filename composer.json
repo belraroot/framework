@@ -14,5 +14,7 @@
             "email": "bosunakakawa@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "symfony/routing": "^6.3"
+    }
 }

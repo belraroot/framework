@@ -1,10 +1,19 @@
 <?php
 
-const BASE_URL = env('APP_URL');
+namespace Core;
 
-function view($file, $data = [])
+define('BASE_URL', env('APP_URL'));
+
+class View
 {
-    $GLOBALS[$data];
+    static function render($template, $data = [])
+    {
+        $content = file_get_contents($template);
 
-    include_once BASE_URL . '/app/Views/' . $file . '.php';
+        foreach ($data as $key => $value) {
+            $content = str_replace("{{ $key }}", $value, $content);
+        }
+
+        return $content;
+    }
 }

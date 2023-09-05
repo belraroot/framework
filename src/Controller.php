@@ -2,6 +2,12 @@
 
 namespace Codecomodo;
 
-class Controller {
-    
+use Core\View;
+
+class Controller
+{
+    public function view($template, $data)
+    {
+        View::render($template, $data);
+    }
 }
