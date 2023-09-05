@@ -22,7 +22,7 @@ class Route
     {
         $router = new RouteCollection();
 
-        $router->add($this->route_name, new Route($path, array(
+        $router->add(self::$route_name, new Route($path, array(
             '_controller' => $controller,
         ), array(), array(), '', array(), array('GET')));
     }
@@ -31,7 +31,7 @@ class Route
     {
         $router = new RouteCollection();
 
-        $router->add($this->route_name, new Route($path, array(
+        $router->add(self::$route_name, new Route($path, array(
             '_controller' => $controller,
         ), array(), array(), '', array(), array('POST')));
     }
@@ -40,7 +40,7 @@ class Route
     {
         $router = new RouteCollection();
 
-        $router->add($this->route_name, new Route($path, array(
+        $router->add(self::$route_name, new Route($path, array(
             '_controller' => $controller,
         ), array(), array(), '', array(), array('PUT')));
     }
@@ -49,7 +49,7 @@ class Route
     {
         $router = new RouteCollection();
 
-        $router->add($this->route_name, new Route($path, array(
+        $router->add(self::$route_name, new Route($path, array(
             '_controller' => $controller,
         ), array(), array(), '', array(), array('DELETE')));
     }
