@@ -2,7 +2,7 @@
 
 namespace Codecomodo;
 
-use Core\View;
+use Codecomodo\Core\View;
 
 class Controller
 {
