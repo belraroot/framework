@@ -2,10 +2,27 @@
     "name": "codecomodo/framework",
     "description": "Codecomodo framework files",
     "type": "library",
+<<<<<<< HEAD
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "Codecomodo\\": "src/"
+=======
+    "require": {
+        "symfony/filesystem": "^6.3",
+        "symfony/dotenv": "^6.3",
+        "symfony/var-dumper": "^6.3",
+        "doctrine/orm": "^2.16",
+        "symfony/http-kernel": "^6.3",
+        "symfony/routing": "^6.3",
+        "symfony/http-foundation": "^6.3",
+        "ext-mysqli": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+>>>>>>> b8e2389 (Major update.)
         }
     },
     "authors": [
@@ -14,8 +31,13 @@
             "email": "bosunakakawa@gmail.com"
         }
     ],
+<<<<<<< HEAD
     "require": {
         "symfony/routing": "^6.3",
         "symfony/http-foundation": "^6.3"
+=======
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+>>>>>>> b8e2389 (Major update.)
     }
 }
