@@ -2,7 +2,7 @@
 
 namespace Calculus\Support;
 
-class CanBeEscapedWhenCastToString
+interface CanBeEscapedWhenCastToString
 {
-
+    public function escapeWhenCastingToString($escape = true);
 }

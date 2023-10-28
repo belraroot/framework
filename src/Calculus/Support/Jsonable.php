@@ -1,8 +1,9 @@
 <?php
 
-namespace Calculus\Contracts\Support;
+namespace Calculus\Support;
 
-class Jsonable
+interface Jsonable
 {
 
+    public function toJson($options = 0);
 }

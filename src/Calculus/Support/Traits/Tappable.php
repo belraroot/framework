@@ -1,8 +1,11 @@
 <?php
 
-namespace Calculus\Support;
+namespace Calculus\Support\Traits;
 
 trait Tappable
 {
-
+    public function tap($callback = null)
+    {
+        return tap($this, $callback);
+    }
 }

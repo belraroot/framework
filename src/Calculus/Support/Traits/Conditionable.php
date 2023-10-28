@@ -1,7 +1,8 @@
 <?php
 
-namespace Calculus\Support;
+namespace Calculus\Support\Traits;
 
+use Calculus\Support\HigherOrderWhenProxy;
 use Closure;
 
 trait Conditionable

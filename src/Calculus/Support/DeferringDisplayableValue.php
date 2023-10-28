@@ -1,6 +1,7 @@
 <?php
 
-class DeferringDisplayableValue
+namespace Calculus\Support;
+interface DeferringDisplayableValue
 {
-
+    public function resolveDisplayableValue();
 }

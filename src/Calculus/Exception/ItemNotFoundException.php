@@ -2,10 +2,8 @@
 
 namespace Calculus\Exception;
 
-class ItemNotFoundException
-{
+use RuntimeException;
 
-    public function __construct()
-    {
-    }
+class ItemNotFoundException extends RuntimeException
+{
 }

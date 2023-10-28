@@ -1,8 +1,8 @@
 <?php
 
-namespace Calculus\Contracts\Support;
+namespace Calculus\Support;
 
-class Arrayable
+interface Arrayable
 {
-
+    public function toArray();
 }

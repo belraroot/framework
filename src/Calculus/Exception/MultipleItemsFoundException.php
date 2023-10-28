@@ -2,13 +2,24 @@
 
 namespace Calculus\Exception;
 
-class MultipleItemsFoundException
+use RuntimeException;
+
+class MultipleItemsFoundException extends RuntimeException
 {
 
-    /**
-     * @param int $count
-     */
-    public function __construct(int $count)
+    public $count;
+
+
+    public function __construct($count, $code = 0, $previous = null)
     {
+        $this->count = $count;
+
+        parent::__construct("$count items were found.", $code, $previous);
+    }
+
+
+    public function getCount()
+    {
+        return $this->count;
     }
 }
