@@ -2,7 +2,7 @@
 
 namespace Calculus\Support;
 
-class Str
+trait Macroable
 {
 
 }
